@@ -1,0 +1,161 @@
+*{
+	border: 0;
+	box-sizing: content-box;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	vertical-align: top;
+}
+
+/* table */
+
+table { font-size: 75%; table-layout: fixed; width: 100%; }
+table { border-collapse: separate; border-spacing: 2px; }
+th, td { border-width: 1px; padding: 0.5em; position: relative; text-align: left; }
+th, td { border-style: solid; }
+th { background:white; border-color:black; font-weight: bolder; }
+td { border-color:black; } 
+
+
+
+/* page */
+
+html { font: 16px/1 'Open Sans', sans-serif; overflow: auto; padding: 0.5in; }
+html { background: #999; cursor: default; }
+
+body { box-sizing: border-box; height: 11in; margin: 0 auto; overflow: hidden; padding: 0.5in; width: 8.5in; }
+body { background: #FFF; border-radius: 1px; box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5); }
+
+
+#line1{
+	border: solid 1px gray;
+	background-color: black;
+	padding-top: 5px;
+	margin-bottom: 15px;
+
+
+}
+.first{
+	width: 200px;
+	height: 150px;
+}
+.first #amblem{
+	position: relative;
+	bottom: 300px;
+	top: -275px;
+	width: 120px;
+	left: 290px;
+}
+.first #amblem2{
+	position: relative;
+	bottom:250px ;
+	top: -379px;
+	width: 175px;
+	left: 530px;
+}
+.first #efatura{
+	font-weight: bolder;
+	position: relative;
+	bottom: 250px;
+	top: -445px;
+	width: 100px;
+	left: 310px;
+}
+.first #firmaad{
+	font-weight: bolder;
+}
+#line2{
+	border: solid 1px grey;
+	padding-top: 5px;
+	background-color: black;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.second{
+	border: solid 1px black;
+    width: 250px;
+	position: relative;
+	top: 140px;
+	
+
+}
+.second #sayin{
+	border-collapse: collapse;
+}
+.second #line3{
+	border: solid 1px grey;
+	background-color: black;
+	padding-top: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+}
+
+.ettn #koyu {
+	font-weight: bolder;
+}
+
+.third{
+	position: relative;
+	bottom: 250px; 
+	top:-85px ;
+	left: 498px ;
+	width: 50%;
+	
+}
+.third #tfatura{
+	border-collapse: collapse ;
+	position: relative;
+	right: 500px;
+}
+#line4{
+	border: solid 1px grey;
+	background-color: black;
+	padding-top: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.ettn {
+	width: 350px;
+	margin-bottom: -150px;
+	margin-top: 150px;
+	
+}
+.fourth #tücret{
+	border-collapse: collapse;
+	border: solid 2px grey;
+	width: 100%;
+	
+}
+.fifth{
+	border: solid 1px black;
+	width: 100%;
+	margin-bottom: 40px;
+	float: right;
+
+}
+.fifth #tutar {
+	border-collapse: collapse;
+	width: 55%;
+	float: right;
+	border: solid 2px black;
+
+}
+.fifth #hiza {
+	text-align: right;
+}
+.sixth #karekod {
+	border-collapse: collapse;
+	border: 2px solid black;
+}
+.sixth #banka{
+	border-collapse: collapse;
+	border:2px solid grey;
+}

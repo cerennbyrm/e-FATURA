@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>E-fatura</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="base">
+      <hr id="line1" width="250" float="left" />
+      <div class="first">
+        <h4 id="firmaad"><b>KOLAYSOFT TEKNOLOJİ</b></h4>
+        <table>
+          <tr>
+            <th>Adres:</th>
+            <td><input type="text" name="adres" style="width: 100%" /></td>
+          </tr>
+          <tr>
+            <th>İl/İlçe:</th>
+            <td><input type="text" name="il.ilçe" style="width: 100%" /></td>
+          </tr>
+          <tr>
+            <th>Tel:</th>
+            <td>
+              <input
+                type="text"
+                pattern="\d*"
+                name="telefon"
+                style="width: 100%"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>Web Sitesi:</th>
+            <td><input type="text" name="websitesi" style="width: 100%" /></td>
+          </tr>
+
+          <tr>
+            <th>E-posta:</th>
+            <td><input type="email" name="email" style="width: 100%" /></td>
+          </tr>
+          <tr>
+            <th>Vergi Dairesi:</th>
+            <td>
+              <input type="text" name="vergi.dairesi" style="width: 100%" />
+            </td>
+          </tr>
+          <tr>
+            <th>VKN:</th>
+            <td>
+              <input type="text" pattern="\d*" name="vkn" style="width: 100%" />
+            </td>
+          </tr>
+          <tr>
+            <th>Müşteri No:</th>
+            <td>
+              <input
+                type="text"
+                pattern="\d*"
+                name="musterino"
+                style="width: 100%"
+              />
+            </td>
+          </tr>
+        </table>
+        <hr id="line2" width="250" float="left" />
+        <img src="logo.png" id="amblem" />
+        <img src="kolaysoft.jpg" id="amblem2" />
+        <p id="efatura">e-FATURA</p>
+      </div>
+      <div class="second">
+        <hr id="line3" width="249" float="left" />
+        <tr>
+          <th>SAYIN</th>
+        </tr>
+        <br />
+        <td>
+          <input
+            type="text"
+            name="adsoyad"
+            style="width: 247px"
+            autofocus
+            placeholder="AD SOYAD "
+          />
+        </td>
+
+        <br /><br />
+        <table id="sayin">
+          <tr>
+            <th>İl/İlçe</th>
+            <td><input type="text" name="il.ilçe" style="width: 110px" /></td>
+          </tr>
+          <tr>
+            <th>Ülke</th>
+            <td><input type="text" name="ülke" style="width: 110px" /></td>
+          </tr>
+          <tr>
+            <th>Vergi Dairesi</th>
+            <td>
+              <input type="text" name="vergidairesi" style="width: 110px" />
+            </td>
+          </tr>
+          <tr>
+            <th>TCKN</th>
+            <td>
+              <input
+                type="text"
+                pattern="\d*"
+                name="tckn"
+                style="width: 110px"
+              />
+            </td>
+          </tr>
+        </table>
+        <hr id="line4" width="249" float="left" />
+      </div>
+      <div class="ettn">
+        <p style="font-size: 12px" id="koyu">
+          <b>ETTN:</b> 4df3888b-0501-4f09-b37a-eb69c9e120c5
+        </p>
+        <br />
+      </div>
+
+      <div class="third" style="float: right">
+        <table border="1" id="tfatura" style="float: right">
+          <tr>
+            <th>Özelliştirme No:</th>
+            <td>
+              <input type="text" name="özellistirme" style="width: 171px" />
+            </td>
+          </tr>
+          <tr>
+            <th>Senaryo:</th>
+            <td>
+              <form>
+                <select name="senaryo" style="width: 171px">
+                  <option selected>Seçiniz...</option>
+                  <option>Temel Fatura</option>
+                  <option>Ticari Fatura</option>
+                  <option>Yolcu Beraber Fatura</option>
+                  <option>HKS</option>
+                  <option>Kamu</option>
+                </select>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <th>Fatura Tipi:</th>
+             
+            <td>
+              <form>
+                <select name="Senaryo" style="width: 171px">
+                  <option selected>Seçiniz</option>
+                  <option>Satış</option>
+                  <option>İade</option>
+                  <option>Tevfikat</option>
+                  <option>İstisna</option>
+                  <option>Özel Matrak</option>
+                  <option>SGK</option>
+                  <option>Tevfikat İade</option>
+                </select>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <th>Fatura No:</th>
+            <td><input type="text" name="faturano" style="width: 171px" /></td>
+          </tr>
+          <tr>
+            <th>Fatura Tarihi:</th>
+            <td>
+              <input
+                type="datetime-local"
+                name="faturadate"
+                style="width: 171px"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="fourth">
+        <table border="1" id="tücret">
+          <tr>
+            <th>Sıra No</th>
+            <th>Mal Hizmet</th>
+            <th>Miktar</th>
+            <th>Birim Fiyat</th>
+            <th>KDV Oranı</th>
+            <th>KDV Tutarı</th>
+            <th>Diğer Vergiler</th>
+            <th>Mal Hizmet Tutarı</th>
+          </tr>
+          <tr>
+            <td><input type="text" style="width: 80px" /></td>
+            <td><input type="text" style="width: 80px" /></td>
+            <td><input type="text" style="width: 80px" /></td>
+            <td><input type="text" style="width: 80px" /></td>
+            <td><input type="text" style="width: 80px" /></td>
+            <td><input type="text" style="width: 80px" /></td>
+            <td><input type="text" style="width: 80px" /></td>
+            <td><input type="text" style="width: 80px" /></td>
+                       
+          </tr>
+
+            
+        </table>
+      </div>
+      <div class="fifth" style="width: 99.6%">
+        <table id="tutar">
+          <tr>
+            <th id="hiza">Mal Hizmet Toplam Tutarı</th>
+            <td><input type="text" style="width: 190px" /></td>
+          </tr>
+          <tr>
+            <th id="hiza">Toplam İskonto</th>
+            <td><input type="text" style="width: 190px" /></td>
+          </tr>
+          <tr>
+            <th id="hiza">Hesaplanan GERÇEK USULDE KATMA DEĞER VERGİSİ(%8)</th>
+            <td><input type="text" style="width: 190px" /></td>
+          </tr>
+          <tr>
+            <th id="hiza">Vergiler Dahil Toplam Tutar</th>
+            <td><input type="text" style="width: 190px" /></td>
+          </tr>
+          <tr>
+            <th id="hiza">Ödenecek Tutar</th>
+            <td><input type="text" style="width: 190px" /></td>
+          </tr>
+        </table>
+      </div>
+      <div class="sixth">
+        <table id="karekod" style="width: 100%">
+          <tr>
+            <td colspan="12" style="width: 100%">
+              Yalnız #YüzElli TL#<img
+                src="karekod.png"
+                id="karekod"
+                align="right"
+              />
+            </td>
+          </tr>
+        </table>
+        <table id="banka" style="width: 100%">
+          <tr>
+            <td colspan="3" style="width: 25%">
+              <input
+                type="text"
+                style="width: 100%"
+                autofocus
+                placeholder="BANKA ŞUBESİ"
+              />
+            </td>
+            <td colspan="9" style="width: 75%">
+              <input
+                type="text"
+                style="width: 100%"
+                autofocus
+                placeholder="IBAN NO"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
